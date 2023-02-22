@@ -509,7 +509,7 @@
 </ul>
 </li>
 <li><strong><code>Onion Model</code></strong> <ul>
-<li><pre><code class="mermaid">  flowchart TD;
+<li><pre class="mermaid">        graph TD;
   subgraph Applications
       subgraph Services
           subgraph OS
@@ -519,9 +519,7 @@
               end
           end
       end
-  end
-</code></pre>
-</li>
+  end</pre></li>
 <li>Each layer protects a boundary, and relies on the security of the layers below</li>
 <li><code>Security perimeter</code>: parts of a system that can be used to disable the protection mechanism lying within</li>
 </ul>
@@ -571,14 +569,14 @@
         <span>© Jiarui LI | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
     </div>
 </footer>
-{% if theme.mermaid.enable %}
-  <script src='https://unpkg.com/mermaid@{{ theme.mermaid.version }}/dist/mermaid.min.js'></script>
-  <script>
-    if (window.mermaid) {
-      mermaid.initialize({{ JSON.stringify(theme.mermaid.options) }});
-    }
-  </script>
-{% endif %}
+
+    <script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
+    <script>
+      if (window.mermaid) {
+        mermaid.initialize({theme: 'forest'});
+      }
+    </script>
+
     </div>
 </body>
 
