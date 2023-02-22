@@ -172,7 +172,7 @@
             <a href="/resume"><img src="/image/avatar.jpeg"></a>
         </div>
         <div class="nickname">Jiarui LI</div>
-        <div class="description"><p><a href="mailto:&#x73;&#x63;&#121;&#106;&#108;&#54;&#64;&#110;&#111;&#116;&#116;&#105;&#110;&#103;&#x68;&#97;&#x6d;&#x2e;&#x65;&#x64;&#117;&#x2e;&#99;&#110;">&#x73;&#x63;&#121;&#106;&#108;&#54;&#64;&#110;&#111;&#116;&#116;&#105;&#110;&#103;&#x68;&#97;&#x6d;&#x2e;&#x65;&#x64;&#117;&#x2e;&#99;&#110;</a></p>
+        <div class="description"><p><a href="mailto:&#x73;&#x63;&#121;&#106;&#x6c;&#54;&#x40;&#110;&#x6f;&#116;&#x74;&#x69;&#110;&#x67;&#x68;&#x61;&#109;&#46;&#101;&#x64;&#117;&#x2e;&#x63;&#110;">&#x73;&#x63;&#121;&#106;&#x6c;&#54;&#x40;&#110;&#x6f;&#116;&#x74;&#x69;&#110;&#x67;&#x68;&#x61;&#109;&#46;&#101;&#x64;&#117;&#x2e;&#x63;&#110;</a></p>
 </div>
         <div class="links">
             
@@ -210,7 +210,14 @@
         <span>© Jiarui LI | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
     </div>
 </footer>
-
+{% if theme.mermaid.enable %}
+  <script src='https://unpkg.com/mermaid@{{ theme.mermaid.version }}/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({{ JSON.stringify(theme.mermaid.options) }});
+    }
+  </script>
+{% endif %}
     </div>
 </body>
 
