@@ -272,12 +272,19 @@
 <li><a href="#risk-threat">Risk &amp; Threat</a></li>
 </ul>
 </li>
+<li><a href="#lecture-02">Lecture 02</a><ul>
+<li><a href="#computer-security">Computer Security</a></li>
+<li><a href="#reliability">Reliability</a></li>
+<li><a href="#fundamental-dilemma">Fundamental Dilemma</a></li>
+<li><a href="#data-information">Data &amp; Information</a></li>
+<li><a href="#security-design">Security Design</a></li>
+</ul>
+</li>
 </ul>
 <!-- tocstop -->
 
 <h2><span id="lecture-01">Lecture 01</span></h2><h3><span id="security">Security</span></h3><ul>
-<li><p><strong><code>Security</code></strong>: </p>
-<ul>
+<li><strong><code>Security</code></strong>: <ul>
 <li>People have protected their property and privacy for generations</li>
 <li>Security is about the protection of assets</li>
 <li><table>
@@ -304,40 +311,27 @@
 <li>Legal system defines boundaries of acceptable behaviour</li>
 </ul>
 </li>
-<li><p><strong><code>Computer Security</code></strong></p>
-<ul>
-<li>Confidentiality:</li>
-<li>Integrity:</li>
-<li>Availability:</li>
-</ul>
-</li>
-<li><p><strong>Goal</strong></p>
-<ul>
+<li><strong>Goal</strong><ul>
 <li>A secure system is one which does not exist</li>
 <li>It is <strong>NOT</strong> about achieving complete security</li>
 <li>It is about minimising risk to systems</li>
 </ul>
 </li>
-<li><p><strong><code>Attack</code></strong></p>
-<ul>
+<li><strong><code>Attack</code></strong><ul>
 <li>An attack is a sequence of steps. It may start innocuosly, gathering information needed to move on to gain privileges on one machine, from there jump to anthor machine, until the final target is reached.</li>
 </ul>
 </li>
-<li><p><strong><code>Attacker</code></strong></p>
-</li>
-<li><p><strong><code>Security Management</code></strong></p>
-<ul>
+<li><strong><code>Attacker</code></strong></li>
+<li><strong><code>Security Management</code></strong><ul>
 <li>Management responsible for assets</li>
 </ul>
 </li>
-<li><p><strong><code>Security Policy</code></strong></p>
-<ul>
+<li><strong><code>Security Policy</code></strong><ul>
 <li>State what should be protected </li>
 <li>And how this should be achieved</li>
 </ul>
 </li>
-<li><p><strong><code>Measure Security</code></strong></p>
-<ul>
+<li><strong><code>Measure Security</code></strong><ul>
 <li>Product Security</li>
 <li>System Security</li>
 <li>Cost of an Attack</li>
@@ -390,6 +384,146 @@
 <li><strong><code>Countermeasures</code></strong><ul>
 <li>Risk analysis generates recommended countermeasures</li>
 <li>Up to date&#x2F;continuous risk analysis not always possible</li>
+</ul>
+</li>
+</ul>
+<h2><span id="lecture-02">Lecture 02</span></h2><h3><span id="computer-security">Computer Security</span></h3><ul>
+<li><strong><code>Computer Security</code></strong><ul>
+<li>The property of a computer system such that reliance can justifiably be placed in the service it delivers</li>
+<li>Concerned with the measures we can take to deal with intentional actions by parties behaving in some unwelcome fashion</li>
+<li><code>Confidentiality</code>: prevention of unauthorised disclosure of information</li>
+<li><code>Integrity</code>: prevention of unauthorised modification of information</li>
+<li><code>Availability</code>: prevention of unauthorised withholding of information or resources</li>
+</ul>
+</li>
+<li><strong><code>Confidentiality</code></strong><ul>
+<li>The prevention of unauthorised users reading sensitive (private, secret) information</li>
+<li><code>Privacy</code>: protection of personal data</li>
+<li><code>Secrecy</code>: protection of data of an organisation</li>
+</ul>
+</li>
+<li><strong><code>Integrity</code></strong><ul>
+<li><em>Informally</em> &gt; Making sure everything is as it is supposed to be.</li>
+<li><em>Formally</em> &gt; Integrity deals with the prevention of unauthorised writing.</li>
+<li>The prevention of unauthorised modification of data, and the assurance that data remains unmodified</li>
+<li>Data Integrity<blockquote>
+<p>“The state that exists when computerised data is the same as that in the source documents and has not been exposed to accidental or malicious alteration or destruction.” [Orange Book]</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><strong><code>Authenticity</code></strong><ul>
+<li>$$Authenticity &#x3D; Integrity + Freshness$$</li>
+</ul>
+</li>
+<li><strong><code>Availability</code></strong><ul>
+<li>The property of being accessible and useable upon demand by an authorised entity.</li>
+<li>The prevention of authorised access to resources or the delaying of timecritical operations.</li>
+<li>Users should be held responsible for their actions</li>
+<li>System should identify and authenticate users</li>
+</ul>
+</li>
+<li><strong><code>Non-Repudiation</code></strong><ul>
+<li>Non-repudiation provides un-forgeable evidence</li>
+<li>Evidence verifiable by a third party</li>
+<li>Nonrepudiation of<ul>
+<li>origin &gt; sender identification</li>
+<li>delivery &gt; delivery confirmation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3><span id="reliability">Reliability</span></h3><ul>
+<li><strong><code>Reliability</code></strong><ul>
+<li>against (accidental) failures</li>
+<li><code>Safety</code>: impact of system failures on their environment</li>
+<li><code>Security</code> is an aspect of reliability, and vice versa</li>
+<li><code>Dependability</code><blockquote>
+<p>The property of a computer system such that reliance can justifiably be placed in the service it delivers</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3><span id="fundamental-dilemma">Fundamental Dilemma</span></h3><ul>
+<li><strong><code>Fundamental Dilemma</code></strong><ul>
+<li>Trade-off between security and ease of use</li>
+<li>conflict between security and ease of use:<ul>
+<li>Security mechanisms need increased computational resources </li>
+<li>Security interferes with working patterns of users</li>
+<li>Managing security is work – thus better (G)UI wins</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3><span id="data-amp-information">Data &amp; Information</span></h3><ul>
+<li>Security is about controlling access to information and resources</li>
+<li><strong><code>Data</code></strong><ul>
+<li>Means to represent information</li>
+</ul>
+</li>
+<li><strong><code>Information</code></strong><ul>
+<li>(subjective) interpretation of data</li>
+</ul>
+</li>
+<li><strong><code>Inference</code></strong><ul>
+<li>Focusing on data can still leave information vulnerable</li>
+</ul>
+</li>
+</ul>
+<h3><span id="security-design">Security Design</span></h3><ul>
+<li><strong><code>Fundamental Design Principles</code></strong><ul>
+<li>Focus of Control</li>
+<li>Complexity vs. Assurance </li>
+<li>Centralised or Decentralised Controls </li>
+<li>Layered Security</li>
+</ul>
+</li>
+<li><strong><code>Focus of Control</code></strong><ul>
+<li><code>1st Design Decision</code><ul>
+<li>In a given application, should the protection mechanisms in a computer system focus on:<ul>
+<li>Data: Permitted manipulation of data</li>
+<li>Operations: Permitted invocations</li>
+<li>Users: Permissions for specific users</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>2nd Design Decision</code><ul>
+<li>Do you prefer simplicity- and higher assurance- to a feature-rich security environment?</li>
+</ul>
+</li>
+<li><code>3rd Design Decision</code><ul>
+<li>Should the tasks of defining and enforcing security be given to a central entity or should they be left to individual components in a system?</li>
+<li><code>Central entity</code>: could mean a bottleneck</li>
+<li><code>Distributed solution</code>: more efficient but harder to manage</li>
+</ul>
+</li>
+<li><code>4th Design Decision</code><ul>
+<li>How can you prevent an attacker getting access to a layer below the protection mechanism?</li>
+<li>A good security layer built upon an insecure layer is useless</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>Onion Model</code></strong> <ul>
+<li><pre><code class="mermaid">  flowchart TD;
+  subgraph Applications
+      subgraph Services
+          subgraph OS
+              subgraph Kernel
+                  subgraph Hardware
+                  end
+              end
+          end
+      end
+  end
+</code></pre>
+</li>
+<li>Each layer protects a boundary, and relies on the security of the layers below</li>
+<li><code>Security perimeter</code>: parts of a system that can be used to disable the protection mechanism lying within</li>
 </ul>
 </li>
 </ul>
