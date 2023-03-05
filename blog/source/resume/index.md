@@ -4,8 +4,8 @@ title: Resume
 
 ## Jiarui LI
 `E-mail`: scyjl6@nottingham.edu.cn
-`Github`: https://monarchocta.github.io/
-`Profile`: https://monarchocta.github.io/
+`Github`: https://github.com/jiarui0923/
+`Profile`: https://jiarui0923.github.io/
 
 
 ## Education
@@ -36,11 +36,16 @@ title: Resume
 ## Awards
 |Award|Institution|Date|Rank|
 |:----|:----------|:--:|:--:|
+|**Zhajiang Excellent Graduate**|Zhejiang Government|`Feb.2023`|-|
 |**Best Performer**|University of Nottingham Ningbo China|`Dec.2022`|`Top 1%`|
 |**President's Scholarship**|University of Nottingham Ningbo China|`Dec.2022`|`Top 1%`|
 |**Zhejiang Provincial Scholarship**|Zhejiang Government|`Oct.2022`|-|
 |**Provost's Scholarship**|University of Nottingham Ningbo China|`Dec.2021`|`Top 5%`|
 |**Government Scholarship for Mobility Out**|Ningbo Municipal Government|`Dec.2021`|-|
+
+## Publications
+|Title|Publication|Status|
+|
 
 ## Research
 |Preview|Research|Institution|Date|

@@ -5,8 +5,8 @@
 # Site
 title: Jiarui's Blog
 subtitle: ''
-description: ''
-keywords:
+description: Jiarui's Blog
+keywords: Blog
 author: Jiarui LI
 language: en
 timezone: ''
@@ -103,8 +103,9 @@ theme: Chic
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:Monarchocta/JiaruiBlog.git
+  repo: git@github.com:jiarui0923/jiarui0923.github.io.git
   branch: web
 
 toc:
   maxDepth: 3
+
