@@ -280,6 +280,10 @@
 <li><a href="#security-design">Security Design</a></li>
 </ul>
 </li>
+<li><a href="#lecture-03">Lecture 03</a><ul>
+<li><a href="#usernames-and-passwords">Usernames and Passwords</a></li>
+</ul>
+</li>
 </ul>
 <!-- tocstop -->
 
@@ -522,6 +526,40 @@
   end</pre></li>
 <li>Each layer protects a boundary, and relies on the security of the layers below</li>
 <li><code>Security perimeter</code>: parts of a system that can be used to disable the protection mechanism lying within</li>
+</ul>
+</li>
+</ul>
+<h2><span id="lecture-03">Lecture 03</span></h2><h3><span id="usernames-and-passwords">Usernames and Passwords</span></h3><ul>
+<li><strong><code>Identification</code></strong>: Who you are</li>
+<li><strong><code>Authentication</code></strong>: Verify that identity</li>
+<li><strong><code>TOCTTOU</code></strong>: Time of check to time of use<ul>
+<li>Repeated authentication</li>
+<li>At the start and during a session</li>
+</ul>
+</li>
+<li><strong><code>Password</code></strong>: Passwords are digital keys<ul>
+<li>One-way hash function</li>
+</ul>
+</li>
+<li><strong><code>Password cracking</code></strong>:<ul>
+<li>Offline: You have a copy of the password hash locally<ul>
+<li>Offline password cracking is simply a case of trying lots of possible passwords, and seeing if we have a hash collision with a password list</li>
+<li>Brute Force approach</li>
+<li><strong><code>Dictionary Attacks</code></strong>: <ul>
+<li>Using a dictionary of common words and passwords</li>
+<li>Apply small variations to this list, trying them all</li>
+<li>Combine words from two different lists</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Online: You do not have the hash, and are instead attempting to gain access to an actual login terminal</li>
+</ul>
+</li>
+<li><strong><code>Password Salting</code></strong>: We can improve security by prepending a random “salt” to a password before hashing<ul>
+<li>Cracking multiple passwords is slower – a hit is for a single user, not all users with that password</li>
+<li>Prevents rainbow table attacks – we can’t pre-compute that many password combinations</li>
+<li>Salting has no effect on the speed of cracking a single password</li>
 </ul>
 </li>
 </ul>
